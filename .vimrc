@@ -12,8 +12,11 @@ Plugin 'w0rp/ale'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
+Plugin 'dracula/vim'
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+set clipboard=unnamedplus
 
 call vundle#end()
 filetype plugin indent on
