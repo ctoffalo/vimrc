@@ -2,6 +2,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set expandtab
 set tabstop=2
 
+set clipboard=unnamedplus
+set hlsearch
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -13,10 +16,14 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
 Plugin 'dracula/vim'
+Plugin 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'blueyed/vim-diminactive'
+
+
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-set clipboard=unnamedplus
 
 call vundle#end()
 
