@@ -5,6 +5,8 @@ set tabstop=2
 set clipboard=unnamedplus
 set hlsearch
 
+hi ColorColumn ctermbg=0 guibg=#d5d5d5
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -20,7 +22,7 @@ Plugin 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highl
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'blueyed/vim-diminactive'
-
+Plugin 'kadekillary/subtle_solo'
 
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -48,6 +50,7 @@ set shiftwidth=4    " Indents will have a width of 4
 set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
+
 
 filetype plugin indent on
 
